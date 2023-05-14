@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    #need-help {
+      position: fixed;
+      bottom: 50px;
+      right: 50px;
+      color: white;
+      background-color: red;
+      padding: 10px;
+      border: 1px solid red;
+      border-radius: 4px;
+    }
+  </style>
+  <title>Client</title>
+</head>
+
+<body>
+  <!-- A simple form to demo -->
+  <form>
+    <fieldset>
+      <legend>Fruit juice size</legend>
+      <p>
+        <input type="radio" name="size" id="size_1" value="small" />
+        <label for="size_1">Small</label>
+      </p>
+      <p>
+        <input type="radio" name="size" id="size_2" value="medium" />
+        <label for="size_2">Medium</label>
+      </p>
+      <p>
+        <input type="radio" name="size" id="size_3" value="large" />
+        <label for="size_3">Large</label>
+      </p>
+    </fieldset>
+  </form>
+  <button id="need-help">Need help!</button>
+</body>
+<!-- Client script -->
+<script src="/socket.io/socket.io.js"></script>
+<script src="./client.js"></script>
+</html>

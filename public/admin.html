@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    #client-screen {
+      border: 1px solid red;
+      background-color: gray;
+      width: 100%;
+      margin: auto;
+    }
+  </style>
+  <title>Admin</title>
+</head>
+
+<body>
+  <h1>Admin</h1>
+  <!-- Video element to show client screen -->
+  <video id="client-screen" autoplay muted playsinline></video>
+</body>
+<!-- Admin script -->
+<script src="/socket.io/socket.io.js"></script>
+<script src="./admin.js"></script>
+
+</html>
